@@ -15,7 +15,24 @@ app.get("/about", (req,res) => {
 });
 
 app.get("/contact", (req,res) => {
-    res.send("Welcome to the contact page");
+    res.json([
+        {
+            name:"siddhant",
+            id:1,
+        },
+        {
+            name:"satya",
+            id:2,
+        },
+        {
+            name:"dhiraj",
+            id:3,
+        },
+        {
+            name:"champ",
+            id:4,
+        },
+    ]);
 });
 
 
