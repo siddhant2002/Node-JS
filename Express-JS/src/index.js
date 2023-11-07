@@ -8,7 +8,14 @@ static_path = path.join(__dirname,"./public")
 
 console.log(static_path);
 
-app.use(express.static(static_path));
+// app.use(express.static(static_path));
+
+app.set("view engine", "hbs");
+
+app.get("/", (req,res) => {
+    res.render("index");
+});
+
 
 app.get("/", (req,res) => {
     res.send("Hello world from the thapa");
