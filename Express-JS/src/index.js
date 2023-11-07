@@ -4,16 +4,23 @@ const express = require("express");
 
 const app = express();
 
-static_path = path.join(__dirname,"./public")
+static_path = path.join(__dirname,"../public");
+
+templatePath = path.join(__dirname,"../template");
 
 console.log(static_path);
+console.log(templatePath);
 
-// app.use(express.static(static_path));
+app.use(express.static(static_path));
 
 app.set("view engine", "hbs");
 
+app.set("views", templatePath);
+
 app.get("/", (req,res) => {
-    res.render('index');
+    res.render('index',{
+        cityName : "Srinagar"
+    });
 });
 
 
