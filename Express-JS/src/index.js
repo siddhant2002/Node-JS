@@ -33,7 +33,7 @@ app.get("/blog", (req,res) => {
 })
 
 app.get("/about", (req,res) => {
-    res.send("Hello from the about page");
+    res.render("about");
 });
 
 app.get("/contact", (req,res) => {
