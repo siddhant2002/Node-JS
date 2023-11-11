@@ -4,18 +4,25 @@ const express = require("express");
 
 const app = express();
 
-static_path = path.join(__dirname,"../public");
+const hbs = require("hbs");
 
-templatePath = path.join(__dirname,"../template");
+const static_path = path.join(__dirname,"../public");
+
+const templatePath = path.join(__dirname,"../template");
+
+const partialPath = path.join(__dirname,"../partials");
 
 console.log(static_path);
 console.log(templatePath);
+console.log(partialPath);
 
 app.use(express.static(static_path));
 
 app.set("view engine", "hbs");
 
-app.set("views", templatePath);
+// app.set("views", templatePath);
+
+hbs.registerPartial(partialPath);
 
 app.get("/", (req,res) => {
     res.render('index',{
