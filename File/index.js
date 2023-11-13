@@ -1,15 +1,15 @@
 const val = require('fs');
 
-// val.mkdir("thapa", ( err)=> {
-//     console.log("Folder created");
-// })
+ val.mkdir("thapa", ( err)=> {
+     console.log("Folder created");
+ })
 
-// val.writeFile("thapa/data.txt","Welcome to Odisha",(err)=>{
-//     console.log("Hmm");
-// });
-// val.rename("thapa/data.txt", "thapa/mybio.txt", (err)=>{
-//     console.log("Hum");
-// });
+ val.writeFile("thapa/data.txt","Welcome to Odisha",(err)=>{
+     console.log("Hmm");
+ });
+ val.rename("thapa/data.txt", "thapa/mybio.txt", (err)=>{
+     console.log("Hum");
+ });
 
 // val.appendFile("thapa/mybio.txt", " Huya bum hum hum", (err)=> {
 //     console.log("New line added");    
