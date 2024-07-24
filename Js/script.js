@@ -72,23 +72,51 @@
 
 // x();
 
-function a()
-{
-    console.log("Hi");
-}
+// function a()
+// {
+//     console.log("Hi");
+// }
 
-var b = function ()
-{
-    console.log("Helio");
-}
+// var b = function ()
+// {
+//     console.log("Helio");
+// }
 
-var c = function xyz()
-{
-    console.log("Heliiiooo");
-    // xyz();
-}
+// var c = function xyz()
+// {
+//     console.log("Heliiiooo");
+//     // xyz();
+// }
 
-a();
-b();
-c();
+// a();
+// b();
+// c();
 // xyz();  Error
+
+
+// setTimeout(function(){
+//     console.log("Wait");
+// },5000);
+
+// function x(y)
+// {
+//     console.log("Heloo");
+//     y();
+// }
+
+// x(function y(){
+//     console.log("hii");
+// });
+
+
+// function listenEvent()
+// {
+//     let count=0;
+//     document.getElementById("clicki").addEventListener("click", function xyz()
+//     {
+//         console.log("button clicked", ++count);
+//     });
+// }
+
+// listenEvent();
+// console.log(count);
