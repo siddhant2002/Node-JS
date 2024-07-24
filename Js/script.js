@@ -120,3 +120,100 @@
 
 // listenEvent();
 // console.log(count);
+
+
+// function x()
+// {
+//     console.log("Hello");
+// }
+
+// function y(val)
+// {
+//     val();
+// }
+// y(x);
+
+const radius = [3,2,1,6];
+
+
+const calculateArea = function (radius)
+{
+    return Math.PI * radius * radius;
+};
+
+const calculateCircumference = function (radius)
+{
+    return 2 * Math.PI * radius;
+};
+
+const calculateDiameter = function (radius)
+{
+    return 2 * radius;
+}
+
+// const area = function (radius, logic)
+// {
+//     const output=[];
+//     for(let i=0;i<radius.length;i++)
+//     {
+//         output.push(logic(radius[i]));
+//     }
+//     return output;
+// };
+
+// console.log(area(radius,calculateArea));
+
+
+// console.log(radius.map(calculateArea));
+// console.log(radius.map(calculateCircumference));
+// console.log(radius.map(calculateDiameter));
+
+
+// Array.prototype.area = function (logic)
+// {
+//     const output=[];
+//     for(let i=0;i<this.length;i++)
+//     {
+//         output.push(logic(this[i]));
+//     }
+//     return output;
+// };
+
+// console.log(radius.area(calculateArea));
+// console.log(radius.area(calculateCircumference));
+// console.log(radius.area(calculateDiameter));
+
+
+const arr = [3,5,1,2,8,4,7,9,10,43,34];
+
+// function double(val)
+// {
+//     return val*2;
+// }
+
+// function triple(val)
+// {
+//     return val*3;
+// }
+
+
+// console.log(arr.map(double));
+// console.log(arr.map(triple));
+
+// console.log(arr.map((val) => val*2));
+
+// console.log(arr.map((val) => val*3));
+
+// console.log(arr.map((val) => val.toString(2)));
+
+// function isOdd(x)
+// {
+//     return x%2;
+// }
+
+// function isEven(x)
+// {
+//     return x%2===0;
+// }
+
+// console.log(arr.filter(isEven));
