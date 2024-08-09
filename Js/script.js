@@ -184,7 +184,7 @@ const calculateDiameter = function (radius)
 // console.log(radius.area(calculateDiameter));
 
 
-const arr = [3,5,1,2,8,4,7,9,10,43,34];
+// const arr = [3,5,1,2,8,4,7,9,10,43,34];
 
 // function double(val)
 // {
@@ -217,3 +217,74 @@ const arr = [3,5,1,2,8,4,7,9,10,43,34];
 // }
 
 // console.log(arr.filter(isEven));
+
+
+// we will use reduce
+const arr = [3,5,1,2,8,4,7,9,10,43,34];
+
+function sum(arr)
+{
+    let sum=0;
+    for(let i=0;i<arr.length;i++)
+    {
+        sum+=arr[i];
+    }
+    return sum;
+}
+
+// console.log(sum(arr));
+
+// console.log(arr.reduce(function (acc, cur){
+//     acc=acc + cur;
+//     return acc;
+// },0));
+
+// console.log(arr.reduce(function (acc, cur){
+//     if(cur>acc)
+//     {
+//         acc=cur;
+//     }
+//     return acc;
+// }, arr[0]));
+
+// const user = [
+//     {firstName: "Siddhant", lastName: "Mallick", Age: 22, company: "IBM"},
+//     {firstName: "Phalguni", lastName: "Mishra", Age: 22, company: "LTTS"},
+//     {firstName: "Rajiv", lastName: "Mishra", Age: 22, company: "IBM"},
+//     {firstName: "Atish", lastName: "Tripathy", Age: 22, company: "IBM"},
+//     {firstName: "Sahil", lastName: "Jaiswal", Age: 22, company: "IBM"},
+//     {firstName: "Pratik", lastName: "Raj", Age: 22, company: "Bentley"},
+//     {firstName: "Chottwant", lastName: "Saw", Age: 22, company: "TCS"},
+// ]
+
+// // get the first and last names
+
+// console.log(user.map((val) => val.firstName+" "+val.lastName));
+
+
+// callback hell
+// cart = ["shoes", "carpet", "grocery"];
+
+// api.createOrder(cart, function(orderId){
+//     api.proceedToPayment(orderId, function(paymentInfo){
+//         api.showOrderSummary(paymentInfo, function(){
+//             api.updateBalanceSummary();
+//         });
+//     });
+// });
+
+
+// using promises
+
+// cart = ["shoes", "grocery", "coal"];
+
+// createOrder(cart)
+// .then(function(orderId){
+//     return proceedToPayment(orderId);
+// })
+// .then(function(paymentInfo){
+//     return showOrderSummary(paymentInfo);
+// })
+// .then(function(paymentInfo){
+//     return updateBalanceSummary();
+// });
