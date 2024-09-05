@@ -220,17 +220,17 @@ const calculateDiameter = function (radius)
 
 
 // we will use reduce
-const arr = [3,5,1,2,8,4,7,9,10,43,34];
+// const arr = [3,5,1,2,8,4,7,9,10,43,34];
 
-function sum(arr)
-{
-    let sum=0;
-    for(let i=0;i<arr.length;i++)
-    {
-        sum+=arr[i];
-    }
-    return sum;
-}
+// function sum(arr)
+// {
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
 
 // console.log(sum(arr));
 
@@ -288,3 +288,36 @@ function sum(arr)
 // .then(function(paymentInfo){
 //     return updateBalanceSummary();
 // });
+
+// const arr = [];
+
+// arr.push(7);
+// console.log(arr);
+
+// arr.pop();
+// console.log(arr);
+
+// arr.unshift(9);
+// console.log(arr);
+
+// arr.shift();
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+
+// const arr = [1,2,3,4,5,6,7,8,9];
+
+// console.log('A', arr);
+
+// console.log(arr.slice(0,4));
+// // console.log(arr);
+
+// console.log(arr.splice(0,4));
+// // console.log(arr);
+
+const cars = ["creta", "wagonR", "swift", "baleno"];
+
+const company = ["hyundai", "suzuki", "suzuki", "suzuki"];
+
+const newarr = [...cars, ...company];
+console.log(newarr);
